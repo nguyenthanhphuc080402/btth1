@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Questions>
+	<fruit>
+		<spelling>
+			<answer>Table</answer>
+		</spelling>
+	
+		<spelling>
+			<answer>Chair</answer>
+		</spelling>
+	
+		<spelling>
+			<answer>Door</answer>
+		</spelling>			
+		
+		<spelling>
+			<answer>House</answer>
+		</spelling>	
+	
+		<spelling>
+			<answer>stool</answer>
+		</spelling>
+	
+		<spelling>
+			<answer>lamp</answer>
+		</spelling>
+	
+		<spelling>
+			<answer>bed</answer>
+		</spelling>
+	
+		<spelling>
+			<answer>crib</answer>
+		</spelling>
+	
+		<spelling>
+			<answer>wardrobe</answer>
+		</spelling>
+	
+		<spelling>
+			<answer>curtain</answer>
+		</spelling>
+	</fruit>
+	<animals>
+		<spelling>
+			<answer>Table</answer>
+		</spelling>
+
+		<spelling>
+			<answer>Chair</answer>
+		</spelling>
+
+		<spelling>
+			<answer>Door</answer>
+		</spelling>
+
+		<spelling>
+			<answer>House</answer>
+		</spelling>
+
+		<spelling>
+			<answer>stool</answer>
+		</spelling>
+
+		<spelling>
+			<answer>lamp</answer>
+		</spelling>
+
+		<spelling>
+			<answer>bed</answer>
+		</spelling>
+
+		<spelling>
+			<answer>crib</answer>
+		</spelling>
+
+		<spelling>
+			<answer>wardrobe</answer>
+		</spelling>
+
+		<spelling>
+			<answer>curtain</answer>
+		</spelling>
+	</animals>
+	<food>
+		<spelling>
+			<answer>Table</answer>
+		</spelling>
+
+		<spelling>
+			<answer>Chair</answer>
+		</spelling>
+
+		<spelling>
+			<answer>Door</answer>
+		</spelling>
+
+		<spelling>
+			<answer>House</answer>
+		</spelling>
+
+		<spelling>
+			<answer>stool</answer>
+		</spelling>
+
+		<spelling>
+			<answer>lamp</answer>
+		</spelling>
+
+		<spelling>
+			<answer>bed</answer>
+		</spelling>
+
+		<spelling>
+			<answer>crib</answer>
+		</spelling>
+
+		<spelling>
+			<answer>wardrobe</answer>
+		</spelling>
+
+		<spelling>
+			<answer>curtain</answer>
+		</spelling>
+	</food>
+</Questions>
