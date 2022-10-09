@@ -18,3 +18,5 @@ D:\HK1 2022-2023\CS511\BTTH\BTHT1.1\BTHT1.1\obj\Debug\AxInterop.WMPLib.dll
 D:\HK1 2022-2023\CS511\BTTH\BTHT1.1\BTHT1.1\obj\Debug\BTHT1.1.csproj.ResolveComReference.cache
 D:\HK1 2022-2023\CS511\BTTH\BTHT1.1\BTHT1.1\bin\Debug\DotNetSkin.SkinControls.dll
 D:\HK1 2022-2023\CS511\BTTH\BTHT1.1\BTHT1.1\obj\Debug\BTHT1.1.csproj.CopyComplete
+D:\HK1 2022-2023\CS511\BTTH\BTHT1.1\BTHT1.1\obj\Debug\BTHT1._1.Form4.resources
+D:\HK1 2022-2023\CS511\BTTH\BTHT1.1\BTHT1.1\obj\Debug\BTHT1._1.Form5.resources

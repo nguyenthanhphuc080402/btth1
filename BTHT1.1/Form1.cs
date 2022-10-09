@@ -63,5 +63,11 @@ namespace BTHT1._1
         {
             Application.Exit();
         }
+
+        private void rjButton1_Click(object sender, EventArgs e)
+        {
+            Form5 page5 = new Form5();
+            page5.Show();
+        }
     }
 }

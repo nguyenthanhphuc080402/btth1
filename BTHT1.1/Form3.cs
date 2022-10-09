@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Media;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
+using System.Windows.Forms.VisualStyles;
 
 namespace BTHT1._1
 {
@@ -23,17 +24,18 @@ namespace BTHT1._1
         public int points = 0;
         public int rest = 10;
 
-        DataTable result = new DataTable();
+        public static DataTable rank = new DataTable();
+        public static string type = "";
 
-
-        public Form3(int theme)
+        public Form3(string theme)
         {
+            type = theme;
             InitializeComponent();
             dt.Columns.Add("STT", typeof(string));
             dt.Columns.Add("path", typeof(string));
             dt.Columns.Add("Vocab", typeof(string));
             dt.Columns.Add("mean", typeof(string));
-            if (theme == 1)
+            if (theme == "Fruit")
             {
                 dt.Rows.Add("1", @"Friut\1.png", "Watermelon", "Dưa hấu");
                 dt.Rows.Add("2", @"Friut\2.png", "Grape", "Nho");
@@ -45,7 +47,7 @@ namespace BTHT1._1
                 dt.Rows.Add("8", @"Friut\8.png", "Blueberry", "Việt quất");
                 dt.Rows.Add("9", @"Friut\9.png", "Lemons", "Chanh");
                 dt.Rows.Add("10", @"Friut\10.png", "Strawberry", "Dâu tây");
-            }else if(theme == 2)
+            }else if(theme == "Food")
             {
                 dt.Rows.Add("1", @"food\1.png", "Bread", "Bánh mì");
                 dt.Rows.Add("2", @"food\2.png", "Sausage", "Xúc xích");
@@ -71,8 +73,17 @@ namespace BTHT1._1
                 dt.Rows.Add("9", @"animals\9.png", "Lion", "Sư tử");
                 dt.Rows.Add("10", @"animals\10.png", "Crocodile", "Cá xấu");
             }
+            // Store core
+            try
+            {
+                rank.Columns.Add("Core", typeof(int));
+                rank.Columns.Add("Time", typeof(string));
+                rank.Columns.Add("Theme", typeof(string));
+            }
+            catch
+            {
+            }
 
-            result.Columns.Add("Core", typeof(string));
         }
 
         public void RemoveText()
@@ -150,6 +161,26 @@ namespace BTHT1._1
                 pal_left.Visible = false;
                 pal_right.Visible = false;
                 pal_result.Visible = true;
+                int core = points / 10;
+                if (core >= 9)
+                {
+                    lbl_result.Text = "Excellent";
+                }else if(core >= 8 && core < 9){
+                    lbl_result.Text = "Very good";
+                }
+                else if(core >= 4 && core < 8)
+                {
+                    lbl_result.Text = "Good";
+                }
+                else
+                {
+                    lbl_result.Text = "Bad";
+                    lbl_result.ForeColor = Color.Red;
+                }
+                lbl_result.Visible = true;
+                //Add core into datatable
+                rank.Rows.Add(points, DateTime.Now.ToString("yyyy-MM-dd h:mm:ss tt"), type);
+
             }
             txt_input.Text = "";
             txt_input.Focus();
@@ -205,7 +236,6 @@ namespace BTHT1._1
 
         private void btn_music_Click(object sender, EventArgs e)
         {
-            Form1.player.controls.stop();
             if (Form1.sound)
             {
                 Form1.player.controls.play();
@@ -218,6 +248,18 @@ namespace BTHT1._1
                 btn_music.BackgroundImage = Image.FromFile(@"..\\..\\image\NotVolu.png");
                 Form1.sound = true;
             }
+        }
+
+        private void btn_info_Click(object sender, EventArgs e)
+        {
+            Form4 frm = new Form4(rank);
+            frm.Show();
+        }
+
+        private void txt_input_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                btn_check_Click(sender, e);
         }
     }
 }

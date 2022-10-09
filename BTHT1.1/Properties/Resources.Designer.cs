@@ -203,6 +203,26 @@ namespace BTHT1._1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Info {
+            get {
+                object obj = ResourceManager.GetObject("Info", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap list {
+            get {
+                object obj = ResourceManager.GetObject("list", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NotVolu {
             get {
                 object obj = ResourceManager.GetObject("NotVolu", resourceCulture);
@@ -216,6 +236,16 @@ namespace BTHT1._1.Properties {
         internal static System.Drawing.Bitmap page2 {
             get {
                 object obj = ResourceManager.GetObject("page2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ranking {
+            get {
+                object obj = ResourceManager.GetObject("ranking", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

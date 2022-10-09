@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rjButton1 = new BTTH1.RJButton();
             this.btn_close = new BTTH1.RJButton();
             this.btn_music = new BTTH1.RJButton();
             this.btn_start = new BTTH1.RJButton();
@@ -39,6 +40,7 @@
             // 
             this.panel1.BackgroundImage = global::BTHT1._1.Properties.Resources.background1;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.rjButton1);
             this.panel1.Controls.Add(this.btn_close);
             this.panel1.Controls.Add(this.btn_music);
             this.panel1.Controls.Add(this.btn_start);
@@ -48,6 +50,26 @@
             this.panel1.Size = new System.Drawing.Size(1284, 745);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.BackColor = System.Drawing.Color.Transparent;
+            this.rjButton1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.rjButton1.BackgroundImage = global::BTHT1._1.Properties.Resources.list;
+            this.rjButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 20;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Location = new System.Drawing.Point(0, 3);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(100, 98);
+            this.rjButton1.TabIndex = 37;
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.rjButton1_Click);
             // 
             // btn_close
             // 
@@ -135,6 +157,7 @@
         private System.Windows.Forms.Panel panel1;
         private BTTH1.RJButton btn_music;
         private BTTH1.RJButton btn_close;
+        private BTTH1.RJButton rjButton1;
     }
 }
 

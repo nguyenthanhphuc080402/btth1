@@ -20,7 +20,7 @@ namespace BTHT1._1
 
         private void rjButton1_Click(object sender, EventArgs e)
         {
-            Form3 frm = new Form3(1);
+            Form3 frm = new Form3("Fruit");
             frm.Show();
         }
 
@@ -47,13 +47,14 @@ namespace BTHT1._1
 
         private void btn_food_Click(object sender, EventArgs e)
         {
-            Form3 frm = new Form3(2);
+            //MessageBox.Show();
+            Form3 frm = new Form3("Food");
             frm.Show();
         }
 
         private void rjButton3_Click(object sender, EventArgs e)
         {
-            Form3 frm = new Form3(3);
+            Form3 frm = new Form3("Animals");
             frm.Show();
         }
     }
