@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Media;
 using WMPLib;
 using System.IO;
+using System.Reflection;
 
 namespace BTHT1._1
 {
@@ -68,6 +69,18 @@ namespace BTHT1._1
         {
             Form5 page5 = new Form5();
             page5.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            if (!sound)
+            {
+                btn_music.BackgroundImage = Image.FromFile(@"..\\..\\image\Volu.png");
+            }
+            else
+            {
+                btn_music.BackgroundImage = Image.FromFile(@"..\\..\\image\NotVolu.png");
+            }
         }
     }
 }

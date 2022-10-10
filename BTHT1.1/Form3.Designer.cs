@@ -286,6 +286,7 @@
             this.btn_music.TextColor = System.Drawing.Color.White;
             this.btn_music.UseVisualStyleBackColor = false;
             this.btn_music.Click += new System.EventHandler(this.btn_music_Click);
+            
             // 
             // btn_home
             // 

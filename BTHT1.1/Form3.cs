@@ -47,7 +47,8 @@ namespace BTHT1._1
                 dt.Rows.Add("8", @"Friut\8.png", "Blueberry", "Việt quất");
                 dt.Rows.Add("9", @"Friut\9.png", "Lemons", "Chanh");
                 dt.Rows.Add("10", @"Friut\10.png", "Strawberry", "Dâu tây");
-            }else if(theme == "Food")
+            }
+            else if (theme == "Food")
             {
                 dt.Rows.Add("1", @"food\1.png", "Bread", "Bánh mì");
                 dt.Rows.Add("2", @"food\2.png", "Sausage", "Xúc xích");
@@ -111,13 +112,13 @@ namespace BTHT1._1
         public void CorrectAnswer()
         {
             //txt_input.Enabled = false;
-            
+
             lbl_Feedback.Text = "Great job!You correctly.";
             CorrectAnswers++;
             lbl_Feedback.Visible = true;
             lbl_Feedback.ForeColor = Color.Green;
             points += 10;
-            lblPoints.Text = points+"/100";
+            lblPoints.Text = points + "/100";
         }
         public void IncorrectAnswer()
         {
@@ -133,7 +134,7 @@ namespace BTHT1._1
             if (index < 10)
             {
                 string path = Convert.ToString(dt.Rows[index]["path"]);
-                string volab = Convert.ToString(dt.Rows[index-1]["Vocab"]);
+                string volab = Convert.ToString(dt.Rows[index - 1]["Vocab"]);
                 //MessageBox.Show(Convert.ToString(dt.Rows[index]["path"]));
                 if (txt_input.Text.Trim() == "" || txt_input.Text.Trim() == "Type your answer here...")
                 {
@@ -141,7 +142,7 @@ namespace BTHT1._1
                     lbl_Feedback.ForeColor = Color.Red;
                     //lbl_Feedback.Text = "Please type an answer first!";
                 }
-                MessageBox.Show("Từ chính xác: "+volab);
+                MessageBox.Show("Từ chính xác: " + volab);
                 if (volab.Trim().ToLower() == txt_input.Text.Trim().ToLower())
                 {
                     CorrectAnswer();
@@ -156,7 +157,8 @@ namespace BTHT1._1
                 picture.BackgroundImage = Image.FromFile(@"..\\..\\image\" + path);
                 rest--;
                 lblAttempts.Text = (Convert.ToString(rest));
-            }else if(index == 10)
+            }
+            else if (index == 10)
             {
                 picture.Visible = false;
                 txt_input.Visible = false;
@@ -170,10 +172,12 @@ namespace BTHT1._1
                 if (core >= 9)
                 {
                     lbl_result.Text = "Excellent";
-                }else if(core >= 8 && core < 9){
+                }
+                else if (core >= 8 && core < 9)
+                {
                     lbl_result.Text = "Very good";
                 }
-                else if(core >= 4 && core < 8)
+                else if (core >= 4 && core < 8)
                 {
                     lbl_result.Text = "Good";
                 }
@@ -184,7 +188,7 @@ namespace BTHT1._1
                 }
                 lbl_result.Visible = true;
                 //Add core into datatable
-                rank.Rows.Add(points, Convert.ToInt32(rank.Compute("max([Order])", string.Empty))+1, DateTime.Now.ToString("yyyy-MM-dd h:mm:ss tt"), type);
+                rank.Rows.Add(points, Convert.ToInt32(rank.Compute("max([Order])", string.Empty)) + 1, DateTime.Now.ToString("yyyy-MM-dd h:mm:ss tt"), type);
             }
             txt_input.Text = "";
             txt_input.Focus();
@@ -200,6 +204,14 @@ namespace BTHT1._1
             string path = Convert.ToString(dt.Rows[index]["path"]);
             picture.BackgroundImage = Image.FromFile(@"..\\..\\image\" + path);
             index++;
+            if (!Form1.sound)
+            {
+                btn_music.BackgroundImage = Image.FromFile(@"..\\..\\image\Volu.png");
+            }
+            else
+            {
+                btn_music.BackgroundImage = Image.FromFile(@"..\\..\\image\NotVolu.png");
+            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -266,5 +278,6 @@ namespace BTHT1._1
             if (e.KeyCode == Keys.Enter)
                 btn_check_Click(sender, e);
         }
+
     }
 }
