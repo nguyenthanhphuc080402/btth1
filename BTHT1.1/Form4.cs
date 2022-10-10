@@ -16,7 +16,7 @@ namespace BTHT1._1
         {
             InitializeComponent();
             dataGridView1.DataSource = dt;
-            dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Descending);
+            //dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Descending);
         }
 
         private void pal_Paint(object sender, PaintEventArgs e)

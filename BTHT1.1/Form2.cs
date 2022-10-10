@@ -13,6 +13,7 @@ namespace BTHT1._1
 {
     public partial class Form2 : Form
     {
+        public int soLan = 1;
         public Form2()
         {
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace BTHT1._1
         {
             Form3 frm = new Form3("Fruit");
             frm.Show();
+            soLan++;
         }
 
         private void btn_close_Click(object sender, EventArgs e)
@@ -40,7 +42,7 @@ namespace BTHT1._1
         private void btn_pre_Click(object sender, EventArgs e)
         {
             Form1 fr = new Form1();
-            this.Hide();
+            this.Close();
             fr.ShowDialog();
             this.Show();
         }
@@ -50,12 +52,14 @@ namespace BTHT1._1
             //MessageBox.Show();
             Form3 frm = new Form3("Food");
             frm.Show();
+            soLan++;
         }
 
         private void rjButton3_Click(object sender, EventArgs e)
         {
             Form3 frm = new Form3("Animals");
             frm.Show();
+            soLan++;
         }
     }
 }
