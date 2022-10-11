@@ -146,8 +146,10 @@
     <None Include="image\list.png" />
     <Content Include="image\page2.png" />
     <None Include="image\ranking.png" />
+    <None Include="image\standing.png" />
     <Content Include="image\start.png" />
     <None Include="image\Volu.png" />
+    <None Include="image\White Red Blue Flat Learn English YouTube Thumbnail %281%29.png" />
     <Content Include="image\White Red Blue Flat Learn English YouTube Thumbnail.png" />
     <Content Include="sound\music.mp3" />
     <Content Include="XML\XMLFile1.xml" />

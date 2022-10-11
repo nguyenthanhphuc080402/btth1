@@ -253,6 +253,16 @@ namespace BTHT1._1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap standing {
+            get {
+                object obj = ResourceManager.GetObject("standing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Volu {
             get {
                 object obj = ResourceManager.GetObject("Volu", resourceCulture);
@@ -276,6 +286,16 @@ namespace BTHT1._1.Properties {
         internal static System.Drawing.Bitmap White_Red_Blue_Flat_Learn_English_YouTube_Thumbnail {
             get {
                 object obj = ResourceManager.GetObject("White Red Blue Flat Learn English YouTube Thumbnail", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap White_Red_Blue_Flat_Learn_English_YouTube_Thumbnail__1_ {
+            get {
+                object obj = ResourceManager.GetObject("White Red Blue Flat Learn English YouTube Thumbnail (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

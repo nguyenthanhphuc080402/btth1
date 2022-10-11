@@ -77,13 +77,13 @@ namespace BTHT1._1
             // Store core
             try
             {
-                rank.Columns.Add("Core", typeof(int));
                 rank.Columns.Add("Order", typeof(int));
+                rank.Columns.Add("Core", typeof(int));
                 rank.Columns.Add("Time", typeof(string));
                 rank.Columns.Add("Theme", typeof(string));
-                rank.Rows.Add(30, 1, DateTime.Now.ToString("yyyy-MM-dd h:mm:ss tt"), "Fruit");
-                rank.Rows.Add(50, 2, DateTime.Now.ToString("yyyy-MM-dd h:mm:ss tt"), "Animals");
-                rank.Rows.Add(70, 3, DateTime.Now.ToString("yyyy-MM-dd h:mm:ss tt"), "Food");
+                rank.Rows.Add(1, 30,  DateTime.Now.ToString("yyyy-MM-dd h:mm:ss tt"), "Fruit");
+                rank.Rows.Add(2,50,  DateTime.Now.ToString("yyyy-MM-dd h:mm:ss tt"), "Animals");
+                rank.Rows.Add(3,70,  DateTime.Now.ToString("yyyy-MM-dd h:mm:ss tt"), "Food");
 
             }
             catch
@@ -188,7 +188,7 @@ namespace BTHT1._1
                 }
                 lbl_result.Visible = true;
                 //Add core into datatable
-                rank.Rows.Add(points, Convert.ToInt32(rank.Compute("max([Order])", string.Empty)) + 1, DateTime.Now.ToString("yyyy-MM-dd h:mm:ss tt"), type);
+                rank.Rows.Add(Convert.ToInt32(rank.Compute("max([Order])", string.Empty)) + 1, points, DateTime.Now.ToString("yyyy-MM-dd h:mm:ss tt"), type);
             }
             txt_input.Text = "";
             txt_input.Focus();

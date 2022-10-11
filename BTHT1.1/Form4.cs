@@ -23,5 +23,26 @@ namespace BTHT1._1
         {
 
         }
+
+        private void btn_pre_Click(object sender, EventArgs e)
+        {
+            Form2 fr = new Form2();
+            this.Hide();
+            fr.ShowDialog();
+            this.Show();
+        }
+
+        private void btn_home_Click(object sender, EventArgs e)
+        {
+            Form1 fr = new Form1();
+            this.Hide();
+            fr.ShowDialog();
+            this.Show();
+        }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
